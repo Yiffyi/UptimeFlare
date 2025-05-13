@@ -13,12 +13,14 @@ const pageConfig: PageConfig = {
   // If not specified, all monitors will be shown in a single list
   // If specified, monitors will be grouped and ordered, not-listed monitors will be invisble (but still monitored)
   group: {
-    "🌐 Public (example group name)": [
-      "foo_monitor",
-      "bar_monitor",
-      "more monitor ids...",
+    "🌐 Public": [
+      "yiffyi-blog",
+      "yiffyi-vault",
+      "yiffyi-mail",
+      "lklk-newapi",
+      "lklk-chat",
     ],
-    "🔐 Private": ["test_tcp_monitor"],
+    // "🔐 Private": ["test_tcp_monitor"],
   },
 };
 
@@ -68,7 +70,7 @@ const workerConfig: WorkerConfig = {
       // checkProxyFallback: true,
     },
     {
-      id: "yiffyi-vaultwarden",
+      id: "yiffyi-vault",
       name: "Vaultwarden - yif.fyi",
       method: "GET",
       target: "https://vault.yif.fyi",
